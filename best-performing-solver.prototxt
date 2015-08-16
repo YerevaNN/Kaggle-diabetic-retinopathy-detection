@@ -1,0 +1,23 @@
+net: "g_01v234_40r-2-40r-2-40r-2-40r-4-256rd0.5-256rd0.5.prototxt"
+
+test_iter: 100
+test_interval: 100
+
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.001
+momentum: 0.9 # didn't touch this ever
+weight_decay: 0 # changed to 0.0015 after 48K iterations
+# The learning rate policy
+lr_policy: "inv"
+gamma: 0.0003 # didn't touch this ever
+power: 0.0075 # didn't touch this ever
+
+display: 3 
+
+max_iter: 180000
+
+snapshot: 3000
+snapshot_prefix: "../../data/models/g_01v234_40r-2-40r-2-40r-2-40r-4-256rd0.5-256rd0.5-wd0-lr0.001"
+#log: "log_g_01v234_40r-2-40r-2-40r-2-40r-4-256rd0.5-256rd0.5-wd0-lr0.001.txt"
+solver_mode: GPU
+ 
